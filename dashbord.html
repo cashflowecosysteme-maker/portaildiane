@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Portail Diane</title>
+  <link rel="stylesheet" href="/css/dashbord.css">
+</head>
+<body>
+  <canvas id="starry-canvas"></canvas>
+  <header class="topbar">
+    <div class="brand"><span class="brand-icon">✦</span><div><strong>Portail Diane</strong><small id="welcome-line">Bienvenue dans ton portail de formation</small></div></div>
+    <div class="top-actions"><span id="user-name"></span><button id="logout-btn" type="button">Déconnexion</button></div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <nav class="nav-stack">
+        <div class="nav-section"><div class="nav-section-title">Équipe principale</div><div class="nav-item" id="nav-nyxia" data-page-key="nyxia"><img class="nav-avatar" src="https://univers.nyxia.top/NyXia.png" alt="NyXia" onerror="this.style.display='none'"><span class="nav-text"><span class="nav-name">NyXia</span><span class="nav-sub">Orientation &amp; technique</span></span><span class="nav-arrow">›</span></div>
+<div class="nav-item" id="nav-diane" data-page-key="diane"><img class="nav-avatar" src="https://univers.nyxia.top/Diane.png" alt="Diane" onerror="this.style.display='none'"><span class="nav-text"><span class="nav-name">Diane</span><span class="nav-sub">Créatrice &amp; accompagnement</span></span><span class="nav-arrow">›</span></div>
+<div class="nav-item" id="nav-eric" data-page-key="eric"><img class="nav-avatar" src="https://univers.nyxia.top/Eric.png" alt="Éric" onerror="this.style.display='none'"><span class="nav-text"><span class="nav-name">Éric</span><span class="nav-sub">Communication &amp; CashFlow</span></span><span class="nav-arrow">›</span></div></div>
+        <div class="atelier-group" id="atelier-group"><button class="atelier-toggle" id="atelier-toggle" type="button"><span>🎭 Atelier</span><span class="atelier-caret">⌄</span></button><div class="atelier-panel"><div class="nav-item" id="nav-dylan" data-page-key="dylan"><img class="nav-avatar" src="https://d1yei2z3i6k35z.cloudfront.net/1872133/6ab5bae9792486.76657673_Dylan.png" alt="Dylan" onerror="this.style.display='none'"><span class="nav-text"><span class="nav-name">Dylan</span><span class="nav-sub">Personnage NyXia</span></span><span class="nav-arrow">›</span></div>
+<div class="nav-item" id="nav-keven" data-page-key="keven"><img class="nav-avatar" src="https://d1yei2z3i6k35z.cloudfront.net/1872133/6ab5be53c03371.71325328_Keven.png" alt="Keven" onerror="this.style.display='none'"><span class="nav-text"><span class="nav-name">Keven</span><span class="nav-sub">Personnage NyXia</span></span><span class="nav-arrow">›</span></div>
+<div class="nav-item" id="nav-marie-pier" data-page-key="marie-pier"><img class="nav-avatar" src="https://d1yei2z3i6k35z.cloudfront.net/1872133/6ab5c1ef0feeb1.04475936_Marie-Pier.png" alt="Marie-Pier" onerror="this.style.display='none'"><span class="nav-text"><span class="nav-name">Marie-Pier</span><span class="nav-sub">Personnage NyXia</span></span><span class="nav-arrow">›</span></div></div></div>
+        <div class="nav-section"><div class="nav-section-title">Outils</div><div class="nav-item" id="nav-tool-52b3a37e" data-page-key="tool-52b3a37e"><span class="nav-icon">🔬 </span><span class="nav-text"><span class="nav-name">Co-Thérapeute</span><span class="nav-sub">Outil spécialisé</span></span><span class="nav-arrow">›</span></div>
+<div class="nav-item" id="nav-tool-f2676693" data-page-key="tool-f2676693"><span class="nav-icon">🩺</span><span class="nav-text"><span class="nav-name">Générateur d&#39;exercices</span><span class="nav-sub">Outil spécialisé</span></span><span class="nav-arrow">›</span></div>
+<div class="nav-item" id="nav-tool-bf020473" data-page-key="tool-bf020473"><span class="nav-icon">🌟</span><span class="nav-text"><span class="nav-name">Miroir-Praticien</span><span class="nav-sub">Outil spécialisé</span></span><span class="nav-arrow">›</span></div>
+<div class="nav-item" id="nav-tool-ab2ed683" data-page-key="tool-ab2ed683"><span class="nav-icon">🧬</span><span class="nav-text"><span class="nav-name">Neuro-Alchimie</span><span class="nav-sub">Outil spécialisé</span></span><span class="nav-arrow">›</span></div>
+<div class="nav-item" id="nav-tool-44249f97" data-page-key="tool-44249f97"><span class="nav-icon">📖</span><span class="nav-text"><span class="nav-name">Journal de Réflexion</span><span class="nav-sub">Outil spécialisé</span></span><span class="nav-arrow">›</span></div></div>
+      </nav>
+    </aside>
+
+    <main class="workspace">
+      <div id="empty-state" class="empty-state">
+        <div class="portal-mark">✦</div>
+        <h2>Portail Diane</h2>
+        <p>Ce portail a pour but d'offrir la formation certifiante de Praticienne Neuro Alchimiste</p>
+      </div>
+      <iframe id="portal-frame" title="Espace du portail" src="about:blank"></iframe>
+    </main>
+  </div>
+
+  <script>
+    window.NYXIA_PORTAL = {
+      title: "Portail Diane",
+      shortTitle: "Portail Diane",
+      defaultPage: "nyxia",
+      pages: {"nyxia":"/chat-nyxia.html","diane":"/chat-diane.html","eric":"/chat-eric.html","dylan":"/chat-dylan.html","keven":"/chat-keven.html","marie-pier":"/chat-marie-pier.html","tool-52b3a37e":"/co-therapeute.html","tool-f2676693":"/generateur-exercices.html","tool-bf020473":"/miroir-praticien.html","tool-ab2ed683":"/neuro-alchimie.html","tool-44249f97":"/journal-relfexion.html"},
+      agents: {"nyxia":{"key":"nyxia","name":"NyXia","sub":"Orientation & technique","icon":"✦","image":"https://univers.nyxia.top/NyXia.png","custom":false,"portail":"tous","voiceEnv":"ELEVENLABS_NYXIA_VOICE_ID","voiceId":"4RsGOijU4NDnmihod21E","greeting":"Je suis là. Dis-moi ce que tu veux faire avancer dans ce portail."},"diane":{"key":"diane","name":"Diane","sub":"Créatrice & accompagnement","icon":"👑","image":"https://univers.nyxia.top/Diane.png","custom":false,"portail":"lena","voiceEnv":"ELEVENLABS_DIANE_VOICE_ID","voiceId":"HpPsEmBPs9okadyROxr6","greeting":"Je suis là. Dis-moi ce que tu veux faire avancer dans ce portail."},"eric":{"key":"eric","name":"Éric","sub":"Communication & CashFlow","icon":"💼","image":"https://univers.nyxia.top/Eric.png","custom":false,"portail":"cercles","voiceEnv":"ELEVENLABS_ERIC_VOICE_ID","voiceId":"","greeting":"Je suis là. Dis-moi ce que tu veux faire avancer dans ce portail."},"dylan":{"key":"dylan","name":"Dylan","sub":"Personnage NyXia","icon":"✨","image":"https://d1yei2z3i6k35z.cloudfront.net/1872133/6ab5bae9792486.76657673_Dylan.png","custom":true,"portail":"","voiceEnv":"ELEVENLABS_DYLAN_VOICE_ID","voiceId":"93nuHbke4dTER9x2pDwE","greeting":"Je suis là. Dis-moi ce que tu veux faire avancer dans ce portail."},"keven":{"key":"keven","name":"Keven","sub":"Personnage NyXia","icon":"✨","image":"https://d1yei2z3i6k35z.cloudfront.net/1872133/6ab5be53c03371.71325328_Keven.png","custom":true,"portail":"","voiceEnv":"ELEVENLABS_KEVEN_VOICE_ID","voiceId":"RTFg9niKcgGLDwa3RFlz","greeting":"Je suis là. Dis-moi ce que tu veux faire avancer dans ce portail."},"marie-pier":{"key":"marie-pier","name":"Marie-Pier","sub":"Personnage NyXia","icon":"✨","image":"https://d1yei2z3i6k35z.cloudfront.net/1872133/6ab5c1ef0feeb1.04475936_Marie-Pier.png","custom":true,"portail":"","voiceEnv":"ELEVENLABS_MARIE_PIER_VOICE_ID","voiceId":"K7gx0ylJdff0yjM2uVQS","greeting":"Je suis là. Dis-moi ce que tu veux faire avancer dans ce portail."}}
+    };
+  </script>
+  <script src="/js/starry-bg.js" defer></script>
+  <script src="/js/dashbord.js" defer></script>
+</body>
+</html>

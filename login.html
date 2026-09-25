@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Portail Diane — Connexion</title>
+  <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+  <canvas id="starry-canvas"></canvas>
+  <main class="login-wrap">
+    <section class="login-card">
+      <div class="portal-mark">✦</div>
+      <h1>Portail Diane</h1>
+      <p class="subtitle">Bienvenue dans ton portail de formation</p>
+      <form id="login-form">
+        <label>Ton prénom <input id="firstname" autocomplete="given-name" placeholder="Ton prénom"></label>
+        <label>Adresse courriel <input id="email" type="email" autocomplete="email" required placeholder="ton@email.com"></label>
+        <label>Mot de passe <input id="password" type="password" autocomplete="current-password" required placeholder="••••••••"></label>
+        <button id="login-btn" type="submit">Se connecter</button>
+        <p id="login-msg" class="msg" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <script>window.NYXIA_PORTAL_TITLE="Portail Diane";</script>
+  <script src="/js/starry-bg.js" defer></script>
+  <script src="/js/login.js" defer></script>
+</body>
+</html>

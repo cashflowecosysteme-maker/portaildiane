@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Portail Diane — NyXia</title>
+  <link rel="stylesheet" href="/css/chat.css">
+</head>
+<body>
+  <canvas id="starry-canvas"></canvas>
+  <main class="chat-shell">
+    <header class="chat-head">
+      <div id="agent-avatar" class="agent-avatar"></div>
+      <div class="agent-info"><h1>NyXia</h1><p>Orientation & technique</p></div>
+      <div class="head-actions">
+        <button id="formation-btn" type="button" hidden>🎓 Formation Vivante</button>
+        <button id="new-chat-btn" type="button">✨ Nouveau chat</button>
+      </div>
+    </header>
+
+    <section id="messages" class="messages" aria-live="polite"></section>
+    <div id="attachment-state" class="attachment-state" hidden></div>
+
+    <footer class="composer">
+      <label class="icon-btn" title="Joindre une image">📎<input id="file-input" type="file" accept="image/*" hidden></label>
+      <button class="icon-btn" id="mic-btn" type="button" title="Parler">🎤</button>
+      <textarea id="message-input" rows="1" placeholder="Écris ou parle à NyXia…"></textarea>
+      <button class="send-btn" id="send-btn" type="button" title="Envoyer">➤</button>
+    </footer>
+  </main>
+
+  <script>
+    window.NYXIA_AGENT = {"key":"nyxia","name":"NyXia","sub":"Orientation & technique","icon":"✦","image":"https://univers.nyxia.top/NyXia.png","custom":false,"portail":"tous","voiceEnv":"ELEVENLABS_NYXIA_VOICE_ID","voiceId":"4RsGOijU4NDnmihod21E","greeting":"Je suis là. Dis-moi ce que tu veux faire avancer dans ce portail."};
+    window.NYXIA_PORTAL_TITLE = "Portail Diane";
+  </script>
+  <script src="/js/starry-bg.js" defer></script>
+  <script src="/js/chat.js" defer></script>
+</body>
+</html>
