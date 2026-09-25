@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <link rel="icon" type="image/png" href="/FavIcon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Diane — NyXia</title>
+<title>Éric — NyXia</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -40,8 +40,8 @@ textarea{flex:1;min-height:42px;max-height:120px;resize:none;background:rgba(15,
   <div class="chat-header">
     <span id="header-avatar"></span>
     <div class="chat-header-info">
-      <div class="chat-header-name">Diane</div>
-      <div class="chat-header-sub">Créatrice & accompagnement</div>
+      <div class="chat-header-name">Éric</div>
+      <div class="chat-header-sub">Communication & CashFlow</div>
     </div>
     <button class="btn" onclick="formation()">🎓 Formation Vivante</button>
     <button class="btn" onclick="newChat()">✨ Nouveau chat</button>
@@ -56,14 +56,14 @@ textarea{flex:1;min-height:42px;max-height:120px;resize:none;background:rgba(15,
   <div class="input-wrap">
     <label class="icon-btn" title="Joindre un fichier">📎<input id="file" type="file" accept=".pdf,.zip,image/*" style="display:none"></label>
     <button class="icon-btn" id="mic" onclick="toggleMic()" title="Parler">🎤</button>
-    <textarea id="input" rows="1" placeholder="Écris ou parle à Diane..."></textarea>
+    <textarea id="input" rows="1" placeholder="Écris ou parle à Éric..."></textarea>
     <button class="send" id="send" onclick="send()">➤</button>
   </div>
   <div class="hint">Entrée pour envoyer · Shift+Entrée pour un retour à la ligne</div>
 </div>
 <script src="/starry-bg.js" defer></script>
 <script>
-const AGENT={"key":"diane","name":"Diane","sub":"Créatrice & accompagnement","icon":"👑","image":"https://univers.nyxia.top/Diane.png","custom":false,"portail":"lena","voiceEnv":"ELEVENLABS_DIANE_VOICE_ID","voiceId":"HpPsEmBPs9okadyROxr6","greeting":"Je suis là. Dis-moi ce que tu veux faire avancer dans ce portail."};
+const AGENT={"key":"eric","name":"Éric","sub":"Communication & CashFlow","icon":"💼","image":"https://univers.nyxia.top/Eric.png","custom":false,"portail":"cercles","voiceEnv":"ELEVENLABS_ERIC_VOICE_ID","voiceId":"","greeting":"Je suis là. Dis-moi ce que tu veux faire avancer dans ce portail."};
 const tokenParam=new URLSearchParams(location.search).get('t')||'';
 let sessionToken=tokenParam||sessionStorage.getItem('nyxia_token')||'';
 if(sessionToken)sessionStorage.setItem('nyxia_token',sessionToken);

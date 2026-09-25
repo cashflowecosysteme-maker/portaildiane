@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <link rel="icon" type="image/png" href="/FavIcon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NyXia — Portail Alex · Devenir Écrivain</title>
+  <title>NyXia — Portail Diane</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -293,10 +293,10 @@
       </div>
     </div>
     <div class="header-center">
-      <div class="welcome-text">Bienvenue dans Devenir Écrivain ✦ <strong id="header-username"></strong></div>
+      <div class="welcome-text">Bienvenue dans Portail Diane ✦ <strong id="header-username"></strong></div>
     </div>
     <div class="header-actions">
-      <span class="btn-header btn-pro">✍️ Portail Alex</span>
+      <span class="btn-header btn-pro">✦ Portail Diane</span>
       <button class="btn-header btn-logout" onclick="logout()">Déconnexion</button>
     </div>
   </header>
@@ -304,10 +304,20 @@
   <div class="app-body">
     <div id="mobile-menu-backdrop" onclick="closeMobileMenu()" aria-hidden="true"></div>
     <aside>
-      <!-- PERSONNAGES DU PORTAIL ALEX -->
+      <!-- PERSONNAGES ACTIFS DU PORTAIL — générés par Création de Portail -->
       <div class="sidebar-section">
         <div class="sidebar-label">Mes Conversations</div>
-        <div class="nav-item active" id="nav-diane" onclick="openAgentTab('diane')">
+        <div class="nav-item active" id="nav-nyxia" onclick="openAgentTab('nyxia')"><img class="nav-avatar" src="https://univers.nyxia.top/NyXia.png" alt="NyXia" onerror="this.style.display='none'"><span class="nav-text"><span class="nav-name">NyXia</span><span class="nav-sub">Orientation &amp; technique</span></span><span class="nav-arrow">›</span></div>
+<div class="nav-item " id="nav-diane" onclick="openAgentTab('diane')"><img class="nav-avatar" src="https://univers.nyxia.top/Diane.png" alt="Diane" onerror="this.style.display='none'"><span class="nav-text"><span class="nav-name">Diane</span><span class="nav-sub">Créatrice &amp; accompagnement</span></span><span class="nav-arrow">›</span></div>
+<div class="nav-item " id="nav-eric" onclick="openAgentTab('eric')"><img class="nav-avatar" src="https://univers.nyxia.top/Eric.png" alt="Éric" onerror="this.style.display='none'"><span class="nav-text"><span class="nav-name">Éric</span><span class="nav-sub">Communication &amp; CashFlow</span></span><span class="nav-arrow">›</span></div>
+<div class="nav-item " id="nav-dylan" onclick="openAgentTab('dylan')"><img class="nav-avatar" src="https://d1yei2z3i6k35z.cloudfront.net/1872133/6ab5bae9792486.76657673_Dylan.png" alt="Dylan" onerror="this.style.display='none'"><span class="nav-text"><span class="nav-name">Dylan</span><span class="nav-sub">Personnage NyXia</span></span><span class="nav-arrow">›</span></div>
+<div class="nav-item " id="nav-keven" onclick="openAgentTab('keven')"><img class="nav-avatar" src="https://d1yei2z3i6k35z.cloudfront.net/1872133/6ab5be53c03371.71325328_Keven.png" alt="Keven" onerror="this.style.display='none'"><span class="nav-text"><span class="nav-name">Keven</span><span class="nav-sub">Personnage NyXia</span></span><span class="nav-arrow">›</span></div>
+<div class="nav-item " id="nav-marie-pier" onclick="openAgentTab('marie-pier')"><img class="nav-avatar" src="https://d1yei2z3i6k35z.cloudfront.net/1872133/6ab5c1ef0feeb1.04475936_Marie-Pier.png" alt="Marie-Pier" onerror="this.style.display='none'"><span class="nav-text"><span class="nav-name">Marie-Pier</span><span class="nav-sub">Personnage NyXia</span></span><span class="nav-arrow">›</span></div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">Mes Conversations</div>
+        <div class="nav-item active" id="nav-diane" onclick="openAgentTab('nyxia')">
           <img class="nav-avatar" src="/Diane.png" alt="Diane">
           <span class="nav-text"><span class="nav-name">Diane</span><span class="nav-sub">Créatrice & accompagnement</span></span>
           <span class="nav-arrow">›</span>
@@ -365,17 +375,13 @@
       
       <div class="sidebar-section">
         <div class="sidebar-label">Outils</div>
-        <div class="nav-item" id="nav-authortools" onclick="openAgentTab('authortools')">
-          <span class="nav-icon" aria-hidden="true">🧰</span>
-          <span class="nav-text"><span class="nav-name">Boîte à outils NyXia</span><span class="nav-sub">Recherche, correction et création</span></span>
-          <span class="nav-arrow">›</span>
-        </div>
-        <div class="nav-item" id="nav-coverstudio" onclick="openAgentTab('coverstudio')">
-          <span class="nav-icon" aria-hidden="true">🎨</span>
-          <span class="nav-text"><span class="nav-name">Studio de couverture KDP</span><span class="nav-sub">Calculateur & export</span></span>
-          <span class="nav-arrow">›</span>
-        </div>
-        <div class="nav-item" id="nav-messages" onclick="showPanel('messages'); if(typeof loadMessages==='function')loadMessages()">
+        <div class="nav-item" id="nav-tool-52b3a37e" onclick="openAgentTab('tool-52b3a37e')"><span class="nav-icon">🔬 </span><span class="nav-text"><span class="nav-name">Co-Thérapeute</span><span class="nav-sub">Outil spécialisé</span></span><span class="nav-arrow">›</span></div>
+<div class="nav-item" id="nav-tool-f2676693" onclick="openAgentTab('tool-f2676693')"><span class="nav-icon">🩺</span><span class="nav-text"><span class="nav-name">Générateur d&#39;exercices</span><span class="nav-sub">Outil spécialisé</span></span><span class="nav-arrow">›</span></div>
+<div class="nav-item" id="nav-tool-bf020473" onclick="openAgentTab('tool-bf020473')"><span class="nav-icon">🌟</span><span class="nav-text"><span class="nav-name">Miroir-Praticien</span><span class="nav-sub">Outil spécialisé</span></span><span class="nav-arrow">›</span></div>
+<div class="nav-item" id="nav-tool-ab2ed683" onclick="openAgentTab('tool-ab2ed683')"><span class="nav-icon">🧬</span><span class="nav-text"><span class="nav-name">Neuro-Alchimie</span><span class="nav-sub">Outil spécialisé</span></span><span class="nav-arrow">›</span></div>
+<div class="nav-item" id="nav-tool-44249f97" onclick="openAgentTab('tool-44249f97')"><span class="nav-icon">📖</span><span class="nav-text"><span class="nav-name">Journal de Réflexion</span><span class="nav-sub">Outil spécialisé</span></span><span class="nav-arrow">›</span></div>
+
+<div class="nav-item" id="nav-messages" onclick="showPanel('messages'); if(typeof loadMessages==='function')loadMessages()">
           <span class="nav-icon">💬</span> Messagerie
           <span id="unread-badge" style="display:none;margin-left:auto;min-width:20px;height:20px;padding:0 6px;border-radius:999px;background:#ff4b6e;color:#fff;font-size:11px;font-weight:700;line-height:20px;text-align:center"></span>
           <span class="nav-arrow">›</span>
@@ -390,7 +396,7 @@
           <div class="user-avatar" id="sidebar-avatar">D</div>
           <div class="user-info">
             <div class="user-name" id="sidebar-username">Chargement...</div>
-            <div class="user-plan">✦ Devenir Écrivain</div>
+            <div class="user-plan">✦ Portail Diane</div>
           </div>
         </div>
       </div>
@@ -519,7 +525,7 @@
       document.getElementById('sidebar-username').textContent = clientName
       document.getElementById('sidebar-avatar').textContent = (clientName || 'U').charAt(0).toUpperCase()
       // Charge NyXia par défaut (cohérent avec le nav actif + iframe initiale)
-      openAgentTab('diane')
+      openAgentTab('nyxia')
       refreshUnreadBadge()
       var voiceToggle = document.getElementById('nyxia-voice-toggle')
       if (voiceToggle) voiceToggle.style.display = 'flex'
@@ -727,7 +733,7 @@
     })
 
     /* ═══════ NAVIGATION ═══════ */
-    var WRITING_WORKSHOP_AGENTS = ['aimee', 'alibi', 'constance', 'fripouille', 'melusine', 'abime']
+    var WRITING_WORKSHOP_AGENTS = []
 
     function isWritingWorkshopAgent(key) {
       return WRITING_WORKSHOP_AGENTS.indexOf(key) !== -1
@@ -786,7 +792,7 @@
     window.addEventListener('message', function(e) {
       if (e.data && e.data.type === 'nyxia_suggest' && e.data.text) {
         // Ouvre NyXia et laisse l'iframe gérer (le chat est maintenant dans l'iframe)
-        openAgentTab('diane')
+        openAgentTab('nyxia')
       }
     })
 
@@ -971,19 +977,7 @@
 
     // Accès direct depuis la barre latérale — charge la page individuelle du personnage en iframe.
     // Chaque personnage a sa propre page, chargée dans l'iframe du tableau de bord.
-    var AGENT_PAGES = {
-      nyxia:  '/chat-nyxia.html',
-      diane:  '/chat-diane.html',
-      alex:   '/chat-alex.html',
-      aimee:  '/chat-aimee.html',
-      alibi:  '/chat-alibi.html',
-      constance: '/chat-constance.html',
-      fripouille: '/chat-fripouille.html',
-      melusine: '/chat-melusine.html',
-      abime: '/chat-abime.html',
-      authortools: '/outils-auteur.html',
-      coverstudio: '/studio-couverture.html'
-    }
+    var AGENT_PAGES = {"nyxia":"/chat-nyxia.html","diane":"/chat-diane.html","eric":"/chat-eric.html","dylan":"/chat-dylan.html","keven":"/chat-keven.html","marie-pier":"/chat-marie-pier.html","tool-52b3a37e":"/co-therapeute.html","tool-f2676693":"/generateur-exercices.html","tool-bf020473":"/miroir-praticien.html","tool-ab2ed683":"/neuro-alchimie.html","tool-44249f97":"/journal-relfexion.html"}
 
     function openAgentTab(key) {
       // Affiche le panel chat
